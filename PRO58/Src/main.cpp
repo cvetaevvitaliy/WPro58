@@ -156,7 +156,7 @@ int main(void) {
 	Ui::setup(&hi2c2);
 #endif
 
-	Ui::drawLogo();
+	//Ui::drawLogo();
 
 #ifdef USE_BUZZER
 	Beeper::init();
@@ -212,7 +212,7 @@ int main(void) {
 				&& ((HAL_GetTick() - Buttons::lastChangeTime) > (SCREENSAVER_TIMEOUT * 1000))
 			)
 		{
-			StateMachine::switchState(StateMachine::State::SCREENSAVER);
+			//StateMachine::switchState(StateMachine::State::SCREENSAVER);
 		}
 		/* USER CODE END WHILE */
 

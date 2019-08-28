@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="PRO58Pub"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/vitaliy/WPro58/PRO58/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/vitaliy/WPro58/PRO58/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/vitaliy/WPro58/PRO58/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UPLOAD">
+				<Option working_dir="/Users/vitaliy/WPro58/PRO58/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 UPLOAD"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PRO58Pub.elf">
+				<Option output="/Users/vitaliy/WPro58/PRO58/cmake-build-debug/PRO58Pub.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vitaliy/WPro58/PRO58/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__weak=__attribute__((weak))"/>
+					<Add option="-D__packed=__attribute__((__packed__))"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DUSE_DIVERSITY"/>
+					<Add option="-DUSE_LBAND"/>
+					<Add option="-DUSE_FS_PINS"/>
+					<Add option="-DUSE_BUZZER"/>
+					<Add option="-DUSE_EXTERNAL_EEPROM"/>
+					<Add option="-DUSE_CALLSIGN"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Inc"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 PRO58Pub.elf"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PRO58Pub.elf/fast">
+				<Option output="/Users/vitaliy/WPro58/PRO58/cmake-build-debug/PRO58Pub.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vitaliy/WPro58/PRO58/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__weak=__attribute__((weak))"/>
+					<Add option="-D__packed=__attribute__((__packed__))"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DUSE_DIVERSITY"/>
+					<Add option="-DUSE_LBAND"/>
+					<Add option="-DUSE_FS_PINS"/>
+					<Add option="-DUSE_BUZZER"/>
+					<Add option="-DUSE_EXTERNAL_EEPROM"/>
+					<Add option="-DUSE_CALLSIGN"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Inc"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/usr/local/Cellar/gcc-arm-none-eabi-63/20170628/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 PRO58Pub.elf/fast"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/vitaliy/WPro58/PRO58/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/arm_common_tables.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/arm_const_structs.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/arm_math.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/cmsis_armcc_V6.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cmFunc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cmInstr.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_cmSimd.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cec.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dac.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dac_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_eth.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_hcd.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2s.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_irda.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_mmc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_nand.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_nor.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pccard.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_sd.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_smartcard.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_sram.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_usart.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_crc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dac.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_fsmc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_i2c.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_iwdg.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rtc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_sdmmc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_wwdg.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Release_Notes.html">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/STM32F100xE_User_Manual.chm">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/STM32F103xB_User_Manual.chm">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/STM32F103xG_User_Manual.chm">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/STM32F107xC_User_Manual.chm">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cec.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dac.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dac_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_eth.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_hcd.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2s.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_irda.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_mmc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_nand.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_nor.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pccard.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sd.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_smartcard.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_sram.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_usart.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_adc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_crc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dac.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dma.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_fsmc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_i2c.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_pwr.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rtc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_sdmmc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_spi.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usart.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/Adafruit_GFX_AS.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/DWT_Delay.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/Eeprom24C01_02.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/Load_fonts.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/Print.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/SSD1306_STM32.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/adc.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/beeper.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/buttons.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/channels.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/dma.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/eeprom_emulated.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/eeprom_external.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/fatshark_pins.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/filter.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/gpio.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/i2c.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/i2c_reset.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/logo.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/main.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/piodabro_logo.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/receiver.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/receiver_spi.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/settings.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/settings_eeprom.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/settings_internal.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_bandscan.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_favourite_screen.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_graph_base_ui.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_menu.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_screensaver.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_search.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_settings.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_settings_callsign.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_settings_favourites.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/state_settings_rssi.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/stm32f1xx_hal_conf.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/stm32f1xx_it.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/tim.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/timer.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/ui.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/ui_menu.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/ui_settings_menu.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/ui_state_menu.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Inc/usart.h">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/STM32F103C8Tx_FLASH.ld">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/Adafruit_GFX_AS.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/DWT_Delay.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/Eeprom24C01_02.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/Print.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/SSD1306_STM32.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/adc.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/beeper.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/buttons.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/channels.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/dma.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/eeprom_emulated.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/fatshark_pins.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/filter.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/glcdfont.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/gpio.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/i2c.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/i2c_reset.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/main.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/receiver.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/receiver_spi.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/settings_eeprom.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_bandscan.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_favourite_screen.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_favourite_screen_ui.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_graph_base_ui.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_menu.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_menu_ui.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_screensaver.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_search.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_search_ui.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_settings.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_settings_callsign.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_settings_favourites.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_settings_rssi.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/state_settings_ui.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/stm32f1xx_hal_msp.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/stm32f1xx_it.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/system_stm32f1xx.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/tim.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/timer.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/ui.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/ui_menu.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/ui_settings_menu.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/ui_state_menu.cpp">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/Src/usart.c">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/startup/startup_stm32f103xb.s">
+			<Option target="PRO58Pub.elf"/>
+		</Unit>
+		<Unit filename="/Users/vitaliy/WPro58/PRO58/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

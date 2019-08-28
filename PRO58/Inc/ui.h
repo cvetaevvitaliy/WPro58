@@ -24,23 +24,23 @@ namespace Ui {
     void setup(I2C_HandleTypeDef *i2c_handle);
     void update();
 
-    void drawLogo();
+    //void drawLogo();
 
     void drawGraph(
         const uint8_t data[],
-        const uint8_t dataSize,
-        const uint8_t dataScale,
-        const uint8_t x,
-        const uint8_t y,
-        const uint8_t w,
-        const uint8_t h
+        uint8_t dataSize,
+        uint8_t dataScale,
+        uint8_t x,
+        uint8_t y,
+        uint8_t w,
+        uint8_t h
     );
 
-    void drawDashedHLine(const int x, const int y, const int w, const int step);
-    void drawDashedVLine(const int x, const int y, const int w, const int step);
+    void drawDashedHLine(int x,  int y, int w, int step);
+    void drawDashedVLine( int x,  int y,  int w,  int step);
 
     void clear();
-    void clearRect(const int x, const int y, const int w, const int h);
+    void clearRect( int x,  int y,  int w,  int h);
 
     void needUpdate();
     void needDisplay();

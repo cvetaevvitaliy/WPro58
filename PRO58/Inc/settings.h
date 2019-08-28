@@ -1,7 +1,7 @@
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
-
+//#define USE_FS_PINS
 // === Diversity ===============================================================
 
 #ifdef USE_DIVERSITY
@@ -29,7 +29,7 @@
 #define RSSI_SEEK_TRESHOLD 80
 
 // Scan loops for setup run.
-#define RSSI_SETUP_RUN 3
+#define RSSI_SETUP_RUN 5
 
 // === Misc ====================================================================
 

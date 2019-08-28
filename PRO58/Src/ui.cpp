@@ -29,10 +29,7 @@ namespace Ui {
     }
 
     void drawLogo(){
-    	display.drawBitmap(0, 0, logo,
-    	SCREEN_WIDTH,
-    	SCREEN_HEIGHT,
-    	WHITE);
+    	display.drawBitmap(0, 0, logo, SCREEN_WIDTH, SCREEN_HEIGHT, WHITE);
     	display.display();
     }
 
@@ -111,7 +108,7 @@ namespace Ui {
         display.clearDisplay();
     }
 
-    void clearRect(const int x, const int y, const int w, const int h) {
+    void clearRect( int x,  int y,  int w,  int h) {
         display.fillRect(x, y, w, h, BLACK);
     }
 
